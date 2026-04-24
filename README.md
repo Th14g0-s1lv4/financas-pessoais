@@ -52,6 +52,10 @@ npm start
 
 Acesse **http://localhost:3000** no navegador.
 
+## 🌐 Deploy
+
+Acesse o app em produção: https://financas-pessoais-production-efb8.up.railway.app
+
 ## 📊 Estrutura do banco de dados
 
 \`\`\`sql
