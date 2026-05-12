@@ -52,4 +52,13 @@ router.get('/resumo', (req, res) => {
   res.json(resumo);
 });
 
+router.get('/despesas', (req, res) => {
+  const despesas = db.prepare(`
+    SELECT * FROM transacoes
+    WHERE tipo = 'despesa'
+    ORDER BY data DESC
+  `).all();
+  res.json(despesas);
+});
+
 module.exports = router;
